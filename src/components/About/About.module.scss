@@ -1,0 +1,16 @@
+@import '../../scss/font.scss';
+@import '../../scss/containers.scss';
+@import '../../scss/colours.scss';
+@import '../../scss/flex.scss';
+
+.Title {
+    padding-top: $header__height;
+}
+
+.About {
+    @include flex(column, flex-start, center);
+    min-height: 100vh;
+    background-color: royalblue;
+    @include nomargin;
+    @include font($light);
+}

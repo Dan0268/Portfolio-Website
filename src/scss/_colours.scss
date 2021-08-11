@@ -1,0 +1,10 @@
+$light: ivory;
+$dark: #202333;
+
+@mixin font($color) {
+    color: $color;
+    }
+
+@mixin background($tone) {
+    background-color: $tone;
+}

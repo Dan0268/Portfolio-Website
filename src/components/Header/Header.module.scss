@@ -1,0 +1,27 @@
+@import '../../scss/font.scss';
+@import '../../scss/containers.scss';
+@import '../../scss/colours.scss';
+@import '../../scss/flex.scss';
+
+
+.header {
+    @include fixed-top;
+    height: $header__height;
+    @include nomargin;
+    @include flex(row, space-around, center);
+    @include background($dark);
+}
+
+.nav_link {
+    text-decoration: none;
+    @include font($light);
+
+    &:hover {
+        color: #2DC2BD;
+        transition-duration: 0.5s;
+    }
+    &_active {
+        color: red;
+      }
+    
+}

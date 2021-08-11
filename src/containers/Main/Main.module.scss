@@ -1,0 +1,11 @@
+@import "../../scss/font.scss";
+@import "../../scss/containers.scss";
+@import "../../scss/colours.scss";
+@import "../../scss/flex.scss";
+
+@include teko;
+
+.Main {
+    // scroll-behavior: smooth;
+    scrollbar-width: none;
+}

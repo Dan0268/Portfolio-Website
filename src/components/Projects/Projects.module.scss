@@ -1,0 +1,43 @@
+@import '../../scss/font.scss';
+@import '../../scss/containers.scss';
+@import '../../scss/colours.scss';
+@import '../../scss/flex.scss';
+
+.Projects {
+    @include flex(column, flex-start, center);
+    min-height: 100vh;
+    background-color: $dark;
+    @include nomargin;
+    @include font($light);
+
+    &__Card {
+        @include flex(row, flex-start, center);
+        text-align: center;
+        width: 1200px;
+        padding: 10px 0px;
+        
+        
+
+        &_Image {
+            @include flex(column, center, center);
+            background-color: whitesmoke;
+            height: 300px;
+            width: 40%;
+        }
+
+        &_Details {
+            @include flex(column, center, center);
+            height: 300px;
+            width: 60%;
+
+            p {
+                text-align: justify;
+            }
+        }
+    }
+}
+
+.Title {
+    padding-top: $header__height;
+}
+

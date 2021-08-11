@@ -1,0 +1,10 @@
+@mixin fixed-top {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+@mixin nomargin {
+    margin: 0%;
+}
+
+$header__height: 50px; 

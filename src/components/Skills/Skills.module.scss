@@ -1,0 +1,32 @@
+@import '../../scss/font.scss';
+@import '../../scss/containers.scss';
+@import '../../scss/colours.scss';
+@import '../../scss/flex.scss';
+
+.Skills {
+    @include flex(column, flex-start, center);
+    min-height: 100vh;
+    background-color: royalblue;
+    @include nomargin;
+    @include font($light);
+}
+
+.title {
+    padding-top: $header__height;
+}
+
+.icon_flex {
+    @include flex(row, center, center);
+    width: 54%;
+    flex-wrap: wrap;
+}
+
+.box {
+    @include flex(column, space-between, center);
+    flex-wrap: wrap;
+    /* border: 1px solid black; */
+    padding: 0%;
+    margin: 10px;
+    height: 110px;
+    width: 150px;
+}
