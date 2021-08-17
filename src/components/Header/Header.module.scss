@@ -8,7 +8,7 @@
     height: $header__height;
     @include nomargin;
     @include flex(row, space-around, center);
-    @include background($dark);
+    @include background($dark, 0px);
     width: 100vw;
     // z-index: 20;
 }
@@ -19,9 +19,7 @@
 
     &:hover {
         color: #2dc2bd;
+        // backdrop-filter: none;
         transition-duration: 0.5s;
-    }
-    &_active {
-        color: red;
     }
 }

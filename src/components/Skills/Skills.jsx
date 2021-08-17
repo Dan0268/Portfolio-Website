@@ -17,8 +17,8 @@ const Skills = () => {
                             <img
                                 src={skill.image}
                                 alt={skill.name}
-                                width="60px"
-                                height="60px"
+                                width="50px"
+                                height="50px"
                             />
                             <p>{skill.name}</p>
                         </div>
@@ -32,12 +32,7 @@ const Skills = () => {
                 <div className={styles.Skills__icon_flex}>
                     {visualArtSkills.map((skill) => (
                         <div className={styles.Skills__box}>
-                            <img
-                                src={skill.image}
-                                alt={skill.name}
-                                width="60px"
-                                height="60px"
-                            />
+                            <img src={skill.image} alt={skill.name} />
                             <p>{skill.name}</p>
                         </div>
                     ))}

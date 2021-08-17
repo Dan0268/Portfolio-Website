@@ -1,10 +1,14 @@
-$light: ivory;
-$dark: #202333;
+$light: whitesmoke;
+// $dark: #131b5485;
+$dark: #636ebf56;
 
 @mixin font($color) {
     color: $color;
-    }
+}
 
-@mixin background($tone) {
+@mixin background($tone, $radius: 10px) {
     background-color: $tone;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(20px);
+    border-radius: $radius;
 }

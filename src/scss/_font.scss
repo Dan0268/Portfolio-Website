@@ -1,35 +1,189 @@
-// %nomargin {
-//     margin: 0%;
-// }
-@mixin teko {
-    @font-face {
-        font-family: 'Teko';
-        src: url(../fonts/Teko/Teko-Regular.ttf);
-      }
-    * {
-        font-family: 'Teko';
+@import "./devices";
+// $h1: 3rem;
+// $h2: 2rem;
+// $h3: 2rem;
+// $p: 1.2rem;
+
+@mixin fonts {
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+    // "Roboto"
+    @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@300&display=swap");
+    // 'Roboto Condensed'
+    $headers: "Roboto Condensed";
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: $headers;
     }
-    h1 {
-        font-size: 48pt;
-        @include nomargin;
+
+    @include xsmall {
+        $h1: 1rem;
+        $h2: 1rem;
+        $h3: 1rem;
+        $p: 0.5rem;
+
+        h1 {
+            font-size: $h1;
+            @include nomargin;
+        }
+        h2 {
+            font-size: $h2;
+            @include nomargin;
+        }
+        h3 {
+            font-size: $h3;
+            @include nomargin;
+        }
+        p {
+            font-size: $p;
+            @include nomargin;
+        }
     }
-    h2 {
-        font-size: 36pt;
-        @include nomargin;
-    }
-    h3 {
-        font-size: 26pt;
-        @include nomargin;
-    }
-    p {
-        font-size: 22pt;
-        @include nomargin;
+
+    @include small {
+        $h1: 3rem;
+        $h2: 2rem;
+        $h3: 2rem;
+        $p: 1.2rem;
+
+        * {
+            font-family: "Teko";
         }
 
-}
+        h1 {
+            font-size: $h1;
+            @include nomargin;
+        }
+        h2 {
+            font-size: $h2;
+            @include nomargin;
+        }
+        h3 {
+            font-size: $h3;
+            @include nomargin;
+        }
+        p {
+            font-size: $p;
+            @include nomargin;
+        }
+    }
 
-@mixin arial {
-    * {
-        font-family: Arial, Helvetica, sans-serif
+    @include medium {
+        $h1: 3rem;
+        $h2: 2rem;
+        $h3: 2rem;
+        $p: 1.2rem;
+
+        h1 {
+            font-size: $h1;
+            @include nomargin;
+        }
+        h2 {
+            font-size: $h2;
+            @include nomargin;
+        }
+        h3 {
+            font-size: $h3;
+            @include nomargin;
+        }
+        p {
+            font-size: $p;
+            @include nomargin;
+        }
+    }
+    @include large {
+        $h1: 3rem;
+        $h2: 2rem;
+        $h3: 2rem;
+        $p: 1.2rem;
+
+        h1 {
+            font-size: $h1;
+            @include nomargin;
+        }
+        h2 {
+            font-size: $h2;
+            @include nomargin;
+        }
+        h3 {
+            font-size: $h3;
+            @include nomargin;
+        }
+        p {
+            font-size: $p;
+            @include nomargin;
+        }
+    }
+    @include xlarge {
+        $h1: 3rem;
+        $h2: 2rem;
+        $h3: 2rem;
+        $p: 1.2rem;
+
+        h1 {
+            font-size: $h1;
+            @include nomargin;
+        }
+        h2 {
+            font-size: $h2;
+            @include nomargin;
+        }
+        h3 {
+            font-size: $h3;
+            @include nomargin;
+        }
+        p {
+            font-size: $p;
+            @include nomargin;
+        }
+    }
+    @include xxlarge {
+        $h1: 3rem;
+        $h2: 2rem;
+        $h3: 2rem;
+        $p: 1.2rem;
+
+        h1 {
+            font-size: $h1;
+            @include nomargin;
+        }
+        h2 {
+            font-size: $h2;
+            @include nomargin;
+        }
+        h3 {
+            font-size: $h3;
+            @include nomargin;
+        }
+        p {
+            font-size: $p;
+            @include nomargin;
+        }
+    }
+    @include xxxlarge {
+        $h1: 3rem;
+        $h2: 2rem;
+        $h3: 2rem;
+        $p: 1.2rem;
+
+        h1 {
+            font-size: $h1;
+            @include nomargin;
+        }
+        h2 {
+            font-size: $h2;
+            @include nomargin;
+        }
+        h3 {
+            font-size: $h3;
+            @include nomargin;
+        }
+        p {
+            font-size: $p;
+            @include nomargin;
+        }
     }
 }

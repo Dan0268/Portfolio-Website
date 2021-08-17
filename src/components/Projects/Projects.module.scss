@@ -4,7 +4,7 @@
 @import "../../scss/flex.scss";
 
 .Projects {
-    padding-top: $header__height;
+    padding-top: $header__height * 2;
     @include flex(column, flex-start, center);
     min-height: 100vh;
     @include font($light);
@@ -27,9 +27,11 @@
 
         &_Image {
             @include flex(column, center, center);
-            background-color: whitesmoke;
+
+            background-color: rgba(245, 245, 245, 0.227);
             height: 300px;
             width: 40%;
+            border-radius: 10px;
         }
 
         &_Details {
