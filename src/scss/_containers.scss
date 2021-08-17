@@ -1,10 +1,17 @@
 @mixin fixed-top {
     position: fixed;
-    top: 0px;
+    top: 0%;
     width: 100%;
 }
 @mixin nomargin {
     margin: 0%;
+    padding: 0%;
 }
 
-$header__height: 50px; 
+$header__height: 50px;
+
+$perspective: 10px;
+$back: -100px;
+$scaleback: 1 + ($back * -10) / $perspective;
+$top: 1px;
+$text: -1px;

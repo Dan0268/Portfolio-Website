@@ -1,22 +1,29 @@
-@import '../../scss/font.scss';
-@import '../../scss/containers.scss';
-@import '../../scss/colours.scss';
-@import '../../scss/flex.scss';
+@import "../../scss/font.scss";
+@import "../../scss/containers.scss";
+@import "../../scss/colours.scss";
+@import "../../scss/flex.scss";
 
 .Projects {
+    padding-top: $header__height;
     @include flex(column, flex-start, center);
     min-height: 100vh;
-    background-color: $dark;
-    @include nomargin;
     @include font($light);
+
+    &__container {
+        @include flex(column, flex-start, center);
+        @include background($dark);
+        padding: 0px 20px;
+    }
+
+    &__Title {
+        // padding-top: $header__height;
+    }
 
     &__Card {
         @include flex(row, flex-start, center);
         text-align: center;
         width: 1200px;
         padding: 10px 0px;
-        
-        
 
         &_Image {
             @include flex(column, center, center);
@@ -36,8 +43,3 @@
         }
     }
 }
-
-.Title {
-    padding-top: $header__height;
-}
-

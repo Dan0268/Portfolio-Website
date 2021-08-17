@@ -1,8 +1,7 @@
-@import '../../scss/font.scss';
-@import '../../scss/containers.scss';
-@import '../../scss/colours.scss';
-@import '../../scss/flex.scss';
-
+@import "../../scss/font.scss";
+@import "../../scss/containers.scss";
+@import "../../scss/colours.scss";
+@import "../../scss/flex.scss";
 
 .header {
     @include fixed-top;
@@ -10,6 +9,8 @@
     @include nomargin;
     @include flex(row, space-around, center);
     @include background($dark);
+    width: 100vw;
+    // z-index: 20;
 }
 
 .nav_link {
@@ -17,11 +18,10 @@
     @include font($light);
 
     &:hover {
-        color: #2DC2BD;
+        color: #2dc2bd;
         transition-duration: 0.5s;
     }
     &_active {
         color: red;
-      }
-    
+    }
 }

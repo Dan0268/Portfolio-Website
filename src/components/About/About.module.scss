@@ -1,16 +1,17 @@
-@import '../../scss/font.scss';
-@import '../../scss/containers.scss';
-@import '../../scss/colours.scss';
-@import '../../scss/flex.scss';
-
-.Title {
-    padding-top: $header__height;
-}
+@import "../../scss/font.scss";
+@import "../../scss/containers.scss";
+@import "../../scss/colours.scss";
+@import "../../scss/flex.scss";
 
 .About {
+    padding-top: $header__height;
     @include flex(column, flex-start, center);
     min-height: 100vh;
-    background-color: royalblue;
-    @include nomargin;
     @include font($light);
+    &__container {
+        @include flex(column, flex-start, center);
+        @include background($dark);
+        flex-wrap: wrap;
+        max-width: 65%;
+    }
 }

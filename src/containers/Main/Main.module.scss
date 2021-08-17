@@ -5,7 +5,141 @@
 
 @include teko;
 
+* {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    // box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+@function factor($z) {
+    @return 1 + ($z * -1) / $perspective;
+}
+
+$perspective: 1px;
+$back: -4px;
+$top: 1px;
+$text: -1px;
+
 .Main {
     // scroll-behavior: smooth;
-    scrollbar-width: none;
+    // background-image: url("../../pictures/backgrounds/RetroParallax.png");
+    // width: 100%;
+    // height: 100%;
+    perspective: $perspective;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
+
+.Parallax {
+    &__top {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 20;
+        // transform-style: preserve-3d;
+    }
+    &__back {
+        background-image: url("../../pictures/backgrounds/RetroParallax.png");
+        // width: 1920px;
+        // height: 1620px;
+        width: 100%;
+        height: 100%;
+        // justify-content: center;
+        // min-height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        // z-index: -10;
+        transform: translateZ($back) scale(factor($back));
+    }
+    &__elements {
+        // transform: translateZ($text) scale(factor($text));
+        z-index: 20;
+        width: 100%;
+    }
+    &__group {
+        position: relative;
+        height: 100vh;
+        transform-style: preserve-3d;
+        // transform: translateZ($text) scale(factor($text));
+    }
+}
+
+// .Skills {
+//     margin-top: $header__height;
+//     padding: 0%;
+//     @include flex(column, flex-start, center);
+//     min-height: 100vh;
+//     @include font($light);
+//     transform: translateZ($text) scale(factor($text));
+
+//     &__container {
+//         @include flex(column, flex-start, center);
+//         @include background($dark);
+//         flex-wrap: wrap;
+//         max-width: 65%;
+//     }
+
+//     &__title {
+//         @include background($dark);
+//         @include nomargin;
+//     }
+//     &__icon_flex {
+//         @include flex(row, center, center);
+//         // max-width: 50%;
+//         flex-wrap: wrap;
+//         @include background($dark);
+//     }
+//     &__box {
+//         @include flex(column, space-between, center);
+//         @include background($dark);
+//         flex-wrap: wrap;
+//         padding: 0%;
+//         margin: 10px;
+//         height: 110px;
+//         width: 150px;
+//     }
+// }
+
+// .Projects {
+//     @include flex(column, flex-start, center);
+//     min-height: 100vh;
+//     // background-color: $dark;
+//     // @include nomargin;
+//     margin-top: $header__height;
+//     @include font($light);
+//     // width: 100vw;
+//     transform: translateZ($text) scale(factor($text));
+
+//     &__Title {
+//         padding-top: $header__height;
+//     }
+
+//     &__Card {
+//         @include flex(row, flex-start, center);
+//         text-align: center;
+//         width: 1200px;
+//         padding: 10px 0px;
+
+//         &_Image {
+//             @include flex(column, center, center);
+//             background-color: whitesmoke;
+//             height: 300px;
+//             width: 40%;
+//         }
+
+//         &_Details {
+//             @include flex(column, center, center);
+//             height: 300px;
+//             width: 60%;
+
+//             p {
+//                 text-align: justify;
+//             }
+//         }
+//     }
+// }

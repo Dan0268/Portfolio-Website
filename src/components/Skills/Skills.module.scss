@@ -1,32 +1,68 @@
-@import '../../scss/font.scss';
-@import '../../scss/containers.scss';
-@import '../../scss/colours.scss';
-@import '../../scss/flex.scss';
+@import "../../scss/font.scss";
+@import "../../scss/containers.scss";
+@import "../../scss/colours.scss";
+@import "../../scss/flex.scss";
 
 .Skills {
+    // margin-top: $header__height;
+    padding-top: $header__height;
     @include flex(column, flex-start, center);
     min-height: 100vh;
-    background-color: royalblue;
-    @include nomargin;
     @include font($light);
+
+    &__container {
+        @include flex(column, flex-start, center);
+        @include background($dark);
+        flex-wrap: wrap;
+        max-width: 65%;
+    }
+
+    &__title {
+        @include background($dark);
+        @include nomargin;
+    }
+    &__icon_flex {
+        @include flex(row, center, center);
+        // max-width: 50%;
+        flex-wrap: wrap;
+        @include background($dark);
+    }
+    &__box {
+        @include flex(column, space-between, center);
+        @include background($dark);
+        flex-wrap: wrap;
+        padding: 0%;
+        margin: 10px;
+        height: 110px;
+        width: 150px;
+    }
 }
 
-.title {
-    padding-top: $header__height;
-}
+// .Skills {
+//     @include flex(column, flex-start, center);
+//     min-height: 100vh;
+//     // background-color: royalblue;
+//     @include nomargin;
+//     @include font($light);
+//     // width: 100vw;
+// }
 
-.icon_flex {
-    @include flex(row, center, center);
-    width: 54%;
-    flex-wrap: wrap;
-}
+// .title {
+//     padding-top: $header__height;
+// }
 
-.box {
-    @include flex(column, space-between, center);
-    flex-wrap: wrap;
-    /* border: 1px solid black; */
-    padding: 0%;
-    margin: 10px;
-    height: 110px;
-    width: 150px;
-}
+// .icon_flex {
+//     @include flex(row, center, center);
+//     width: 54%;
+//     flex-wrap: wrap;
+// }
+
+// .box {
+//     @include flex(column, space-between, center);
+//     flex-wrap: wrap;
+//     /* border: 1px solid black; */
+//     padding: 0%;
+//     margin: 10px;
+//     height: 110px;
+//     width: 150px;
+// }

@@ -14,7 +14,6 @@ import PHOTOSHOP from "../../icons/adobe-photoshop-seeklogo.com.svg";
 import ILLUSTRATOR from "../../icons/adobe-illustrator-seeklogo.com.svg";
 import AFTEREFFECTS from "../../icons/adobe-after-effects-seeklogo.svg";
 import MYSQL from "../../icons/MySQL.svg";
-import JAVA from "../../icons/java-seeklogo.com.svg";
 
 export const webDevSkills = [
     { image: HTML5, name: "HTML5" },
@@ -23,8 +22,7 @@ export const webDevSkills = [
     { image: BOOTSTRAP, name: "BOOTSTRAP" },
     { image: GITHUB, name: "GITHUB" },
     { image: JAVASCRIPT, name: "JAVASCRIPT" },
-    { image: JAVA, name: "JAVA" },
-    // { image: NODEJS, name: "NODEJS" },
+    { image: NODEJS, name: "NODEJS" },
     { image: NPM, name: "NPM" },
     { image: REACT, name: "REACT" },
     { image: SPRING, name: "SPRING" },

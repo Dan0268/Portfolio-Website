@@ -1,5 +1,6 @@
-@import './scss/containers.scss';
+@import "./scss/containers.scss";
 
 .App {
-    @include nomargin; 
+    @include nomargin;
+    // width: 100vw;
 }
