@@ -1,14 +1,34 @@
-$light: whitesmoke;
+$light: honeydew;
 // $dark: #131b5485;
-$dark: #636ebf56;
+$glass: #8d96dc09;
+$darkglass: rgba(184, 44, 93, 0.549);
+$header: #4c5285af;
+$box: rgba(245, 245, 245, 0.734);
+// $innershadow: rgba(176, 228, 247, 0.165);
+$innershadow: rgba(245, 245, 245, 0.344);
+$card: rgba(140, 139, 139, 0.076);
 
 @mixin font($color) {
     color: $color;
+    text-shadow: 2px 2px 4px #000000e2;
 }
 
-@mixin background($tone, $radius: 10px) {
+@mixin headerBackground($tone: $header, $blur: 20px) {
     background-color: $tone;
-    -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur($blur);
+    backdrop-filter: blur($blur);
+}
+
+@mixin background($tone: $glass, $radius: 10px, $blur: 30px) {
+    background-color: $tone;
+    -webkit-backdrop-filter: blur($blur);
+    backdrop-filter: blur($blur);
+    border-radius: $radius;
+    box-shadow: 0px 0px 15px $innershadow inset,
+        0px 5px 5px rgba(0, 0, 0, 0.419);
+}
+@mixin boxBackground($tone: rgba(255, 255, 255, 0), $radius: 10px, $blur: 0px) {
+    background-color: $tone;
+    box-shadow: 0px 0px 15px $box inset, 0px 5px 5px rgba(0, 0, 0, 0.419);
     border-radius: $radius;
 }

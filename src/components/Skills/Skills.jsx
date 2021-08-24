@@ -5,22 +5,19 @@ const Skills = () => {
     return (
         <section className={styles.Skills} id="skills">
             <div className={styles.Skills__container}>
-                <div>
-                    <h1 className={styles.Skills__title}>My Skills</h1>
-                </div>
-                <div>
-                    <h2 className={styles.Skills__title}>Web Development</h2>
+                <div className={styles.Skills__title}>
+                    <h1>Skills</h1>
+                    <h2>Software Development</h2>
                 </div>
                 <div className={styles.Skills__icon_flex}>
                     {webDevSkills.map((skill) => (
                         <div className={styles.Skills__box}>
-                            <img
-                                src={skill.image}
-                                alt={skill.name}
-                                width="50px"
-                                height="50px"
-                            />
-                            <p>{skill.name}</p>
+                            <div className={styles.Skills__box__icon}>
+                                <img src={skill.image} alt={skill.name} />
+                            </div>
+                            <p className={styles.Skills__box__text}>
+                                {skill.name}
+                            </p>
                         </div>
                     ))}
                 </div>
@@ -32,8 +29,12 @@ const Skills = () => {
                 <div className={styles.Skills__icon_flex}>
                     {visualArtSkills.map((skill) => (
                         <div className={styles.Skills__box}>
-                            <img src={skill.image} alt={skill.name} />
-                            <p>{skill.name}</p>
+                            <div className={styles.Skills__box__icon}>
+                                <img src={skill.image} alt={skill.name} />
+                            </div>
+                            <p className={styles.Skills__box__text}>
+                                {skill.name}
+                            </p>
                         </div>
                     ))}
                 </div>

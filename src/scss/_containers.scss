@@ -3,6 +3,11 @@
     top: 0%;
     width: 100%;
 }
+@mixin fixed-bottom {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+}
 @mixin nomargin {
     margin: 0%;
     padding: 0%;

@@ -4,13 +4,22 @@ const Home = () => {
     return (
         <section className={styles.Home} id="home">
             <div className={styles.Home__container}>
-                <div className={styles.Home__container__item}>
+                <div className={styles.Home__container__title}>
                     <h1>Danijel Boskovic</h1>
-                    <h2>Junior Web Developer</h2>
+                    <h2>Software Developer</h2>
                 </div>
-                <div className={styles.Home__container__item}>
-                    <p>Hi, thanks for visiting</p>
-                    <p>I'm a junior web developer</p>
+
+                <div className={styles.Home__container__description}>
+                    <div>
+                        <h2>Hi, thanks for stopping by!</h2>
+                        <br />
+                    </div>
+                    <p>
+                        I am a software developer based in Sydney, Australia,
+                        with a background in Nanotechnology and 3D visual art. I
+                        apply my skills towards innovative tech applications,
+                        scientific visualisation and beautiful 3D graphics.
+                    </p>
                 </div>
             </div>
         </section>

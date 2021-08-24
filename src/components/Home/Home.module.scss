@@ -2,24 +2,67 @@
 @import "../../scss/containers.scss";
 @import "../../scss/colours.scss";
 @import "../../scss/flex.scss";
+@import "../../scss/devices";
 
 .Home {
-    display: grid;
-    height: 100vh;
+    padding-top: $header__height;
+    // display: grid;
+    min-height: 100vh;
     // padding-top: $header__height;
-    margin-top: $header__height;
-    grid-template-columns: 1fr 1fr;
+    // margin-top: $header__height;
+    // grid-template-columns: 1fr 1fr;
     @include font($light);
 
     &__container {
-        @include flex(column, left, center);
-        @include nomargin;
+        @include flex(column, space-between, center);
+        // margin: 3% 2%;
+        max-width: 50vw;
+        @include xsmall {
+            max-width: 100vw;
+        }
+        @include small {
+            max-width: 100vw;
+        }
+        @include medium {
+            max-width: 70vw;
+        }
+        @include large {
+            max-width: 70vw;
+        }
 
-        &__item {
-            @include flex(column, center, center);
-            @include background($dark);
-            padding: 20px;
+        min-height: 55vh;
+
+        &__title {
+            @include flex(column, flex-start, center);
+            @include background;
+            text-align: justify;
+            flex-wrap: wrap;
+            padding: 15px;
             margin: 5%;
+        }
+        &__description {
+            @include flex(column, flex-start, center);
+            @include background;
+            max-width: 100%;
+            text-align: justify;
+            flex-wrap: wrap;
+            padding: 25px;
+            margin: 5%;
+        }
+
+        @include xsmall {
+        }
+        @include small {
+        }
+        @include medium {
+        }
+        @include large {
+        }
+        @include xlarge {
+        }
+        @include xxlarge {
+        }
+        @include xxxlarge {
         }
     }
 }

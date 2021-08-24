@@ -6,31 +6,32 @@ const Projects = () => {
     return (
         <section className={styles.Projects} id="projects">
             <div className={styles.Projects__container}>
-                <div>
-                    <h1 className={styles.Projects__Title}>Projects</h1>
-                </div>
-                <div>
+                <div className={styles.Projects__Title}>
+                    <h1>Projects</h1>
                     <h2>Web Development</h2>
                 </div>
-                {projectitems.map((project) => (
-                    <div className={styles.Projects__Card}>
-                        <div className={styles.Projects__Card_Image}>
-                            <img
-                                src={project.image}
-                                alt={project.name}
-                                height="200px"
-                            />
+                <div className={styles.Projects__Cards}>
+                    {projectitems.map((project) => (
+                        <div className={styles.Projects__Card}>
+                            <img src={project.image} alt={project.name} />
+
+                            <div className={styles.Projects__Card_Details}>
+                                <h3>{project.name}</h3>
+                                {project.github ? (
+                                    <a href={project.github}>
+                                        <p>Github Link</p>
+                                    </a>
+                                ) : (
+                                    <>
+                                        <p></p>
+                                    </>
+                                )}
+
+                                <p>{project.description}</p>
+                            </div>
                         </div>
-                        <div className={styles.Projects__Card_Details}>
-                            <h3>{project.name}</h3>
-                            {/* <p><Link to= {project.github}>github</Link></p> */}
-                            <p>
-                                <a href={project.github}>github</a>
-                            </p>
-                            <p>{project.description}</p>
-                        </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
         </section>
     );

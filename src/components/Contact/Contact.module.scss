@@ -1,0 +1,131 @@
+@import "../../scss/font.scss";
+@import "../../scss/containers.scss";
+@import "../../scss/colours.scss";
+@import "../../scss/flex.scss";
+
+.Contact {
+    // padding-top: $header__height;
+    @include flex(column, center, center);
+    min-height: 90vh;
+    @include font($light);
+    // padding-bottom: $header__height;
+
+    &__container {
+        // padding: 20px;
+        @include flex(column, space-evenly, center);
+        @include background;
+        flex-wrap: wrap;
+        width: auto;
+        height: 300px;
+        padding: 20px;
+        margin-bottom: 15%;
+
+        // @include xsmall {
+        //     width: 330px;
+        //     height: auto;
+        // }
+        // @include small {
+        //     width: 300px;
+        //     height: auto;
+        // }
+        // @include medium {
+        //     width: 390px;
+        //     height: auto;
+        // }
+        // @include large {
+        //     width: 390px;
+        //     height: 580px;
+        // }
+        // @include xlarge {
+        //     width: 390px;
+        //     height: 580px;
+        // }
+        // @include xxlarge {
+        //     width: 390px;
+        //     height: 580px;
+        // }
+        // @include xxxlarge {
+        //     width: 390px;
+        //     height: 580px;
+        // }
+
+        a {
+            @include font($light);
+            text-decoration: none;
+            &:hover {
+                color: #2dc2bd;
+                transition: 0.5s;
+            }
+        }
+    }
+    &__title {
+        text-align: center;
+    }
+    &__icons {
+        @include flex(row, center, center);
+
+        // max-width: 50%;
+
+        // flex-wrap: wrap;
+    }
+
+    &__box {
+        @include flex(column, space-around, center);
+        flex-wrap: wrap;
+        padding: 0%;
+        // margin: 20px 20px;
+        height: 120px;
+        width: 120px;
+        text-align: center;
+
+        a {
+            // @include nomargin;
+            &:hover {
+                width: 80px;
+                height: 80px;
+                filter: brightness(130%);
+                img {
+                    width: 70px;
+                    height: 70px;
+                    transition: 0.7s;
+                }
+                color: #2dc2bd;
+                // font-size: 130%;
+                transition: 0.7s;
+            }
+        }
+
+        &__icon {
+            width: 60px;
+            height: 60px;
+            transition: 0.7s;
+            @include boxBackground;
+            @include flex(column, space-around, center);
+            margin-bottom: 5px;
+
+            img {
+                width: 50px;
+                height: 50px;
+                transition: 0.7s;
+            }
+        }
+        // a {
+        //     @include font($light);
+        //     text-decoration: none;
+        //     &:hover {
+        //         color: #2dc2bd;
+        //         transition: 0.5s;
+        //     }
+        // }
+        &__text {
+            // @include flex(column, flex-start, center);
+            // flex-wrap: wrap;
+            // height: 50px;
+        }
+    }
+}
+.Footer {
+    position: absolute;
+    // bottom: 0%;
+    width: 100vw;
+}

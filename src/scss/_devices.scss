@@ -1,9 +1,10 @@
-$xs: 576px; // Extra small
+$xs: 500px; // Extra small
 $sm: 768px; // Small
 $md: 992px; // Medium
-$lg: 1200px; // Large
-$xl: 1400px; // Extra Large
-$xxl: 3000px;
+$lg: 1400px; // Large
+$xl: 1600px; // Extra Large
+$xxl: 1920px;
+$xxxl: 3840px;
 
 @mixin xsmall {
     @media only screen and (max-width: $xs) {

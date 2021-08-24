@@ -4,11 +4,10 @@ import Header from "../../components/Header/Header";
 import Home from "../../components/Home";
 import Skills from "../../components/Skills";
 import Projects from "../../components/Projects";
-import About from "../../components/About";
+import Contact from "../../components/Contact";
 import { useState, useEffect } from "react";
-import { webDevSkills, visualArtSkills } from "./skillitems";
-import { projectitems } from "./projectitems";
 import $ from "jquery";
+import Footer from "../../components/Footer/Footer";
 
 const Main = () => {
     const [ratio, setRatio] = useState(1);
@@ -39,7 +38,7 @@ const Main = () => {
         const totalHeight =
             $("#1").outerHeight() +
             $("#2").outerHeight() +
-            2 * $("#3").outerHeight() +
+            $("#3").outerHeight() +
             $("#4").outerHeight();
         console.log(totalHeight);
         setRatio(totalHeight / 1620);
@@ -50,11 +49,11 @@ const Main = () => {
     });
 
     const factor = (arg) => {
-        return 1 + arg;
+        return 1 + arg / 10;
     };
 
-    const mult = 10 / 3 + 1;
-    console.log(ratio);
+    const mult = ratio * 12;
+    // console.log(ratio);
 
     // console.log(x);
     // var media = MediaQueryList.media;
@@ -68,12 +67,16 @@ const Main = () => {
             <section className={styles.Main}>
                 <div
                     className={styles.Parallax__back}
-                    style={{
-                        transform: `translateZ(-${
-                            ratio * mult
-                        }px) scale(${factor(ratio * mult)})`,
-                    }}
+                    // style={{
+                    //     transform: `translateZ(-${
+                    //         ratio * mult
+                    //     }px) scale(${factor(ratio * mult)})`,
+                    // }}
                 />
+                <div className={`${styles.Parallax__middle} ${styles.ball2}`} />
+                <div className={`${styles.Parallax__above} ${styles.swirl1}`} />
+                <div className={`${styles.Parallax__above} ${styles.swirl2}`} />
+                <div className={`${styles.Parallax__middle} ${styles.ball1}`} />
                 <div className={styles.Parallax__group}>
                     <div className={styles.Parallax__elements} id={"1"}>
                         <Home />
@@ -85,20 +88,10 @@ const Main = () => {
                         <Projects />
                     </div>
                     <div className={styles.Parallax__elements} id={"4"}>
-                        <About />
+                        <Contact />
                     </div>
                 </div>
             </section>
-            {/* <About /> */}
-            {/* <section className={styles.About} id="about">
-                <div>
-                    <h1 className={styles.Title}>About Me</h1>
-                </div>
-                <div>
-                    <h2>Details</h2>
-                    <p>boskovic.danijel@gmail.com</p>
-                </div>
-            </section> */}
         </Router>
         //
     );

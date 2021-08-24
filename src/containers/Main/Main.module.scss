@@ -7,19 +7,20 @@
 // @include arial;
 
 * {
-    // -ms-overflow-style: none;
+    -ms-overflow-style: none;
     scrollbar-width: none;
     // box-sizing: border-box;
 }
-// ::-webkit-scrollbar {
-//     display: none;
-// }
 
-@function factor($z) {
-    @return 1 + ($z * -1) / $perspective;
+::-webkit-scrollbar {
+    display: none;
 }
 
-$perspective: 1px;
+@function factor($z) {
+    @return 1 + ($z) / $perspective;
+}
+
+$perspective: 10px;
 $back: -90px;
 $top: 1px;
 $text: -1px;
@@ -29,9 +30,10 @@ $text: -1px;
     overflow-x: hidden;
     overflow-y: auto;
     width: 100vw;
+    margin: 0%;
     // height: 100vw;
     // -ms-overflow-style: none;
-    scrollbar-width: initial;
+    // scrollbar-width: none;
     // box-sizing: border-box;
 }
 
@@ -40,19 +42,48 @@ $text: -1px;
         position: fixed;
         top: 0;
         width: 100%;
-        z-index: 1;
+        z-index: 2;
     }
     &__back {
-        background-image: url("../../pictures/backgrounds/RetroParallax.png");
+        @include xsmall {
+        }
+        @include small {
+        }
+        @include medium {
+        }
+        @include large {
+        }
+        @include xlarge {
+        }
+        @include xxlarge {
+        }
+        @include xxxlarge {
+        }
+
+        background-image: url("../../pictures/backgrounds/RetroParallax.jpg");
         width: 100vw;
         height: 1620px;
-        // justify-content: center;
+        justify-content: center;
         // min-height: 100vh;
+        margin: 0%;
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
-        z-index: -1;
-        // transform: translateZ($back) scale(factor($back));
+        z-index: -2;
+        transform: translateZ($back) scale(factor(-$back));
+    }
+
+    &__middle {
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        z-index: 1;
+    }
+    &__above {
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        z-index: 3;
     }
     &__elements {
         z-index: 20;
@@ -61,6 +92,44 @@ $text: -1px;
     &__group {
         position: relative;
         height: 100vh;
+        z-index: 2;
         transform-style: preserve-3d;
     }
+}
+
+.ball1 {
+    background-image: url("../../pictures/objects/ball1.png");
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: -40%;
+    top: 370%;
+    transform: translateZ(-20px) scale(factor(20px));
+}
+.swirl1 {
+    background-image: url("../../pictures/objects/swirl1.png");
+    width: 310px;
+    height: 816px;
+    position: absolute;
+    left: 27%;
+    top: 140%;
+    transform: translateZ(5px) scale(factor(-6px));
+}
+.swirl2 {
+    background-image: url("../../pictures/objects/swirl2.png");
+    width: 310px;
+    height: 766px;
+    position: absolute;
+    left: 63%;
+    top: 220%;
+    transform: translateZ(5px) scale(factor(-6px));
+}
+.ball2 {
+    background-image: url("../../pictures/objects/ball2.png");
+    width: 719px;
+    height: 630px;
+    position: absolute;
+    left: 70%;
+    top: 10%;
+    transform: translateZ(-10px) scale(factor(10px));
 }

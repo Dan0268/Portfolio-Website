@@ -1,0 +1,14 @@
+@import "../../scss/font.scss";
+@import "../../scss/containers.scss";
+@import "../../scss/colours.scss";
+@import "../../scss/flex.scss";
+
+.Footer {
+    // @include fixed-bottom;
+    height: $header__height;
+    @include nomargin;
+    @include flex(column, space-around, center);
+    text-align: center;
+    @include font($light);
+    @include headerBackground;
+}

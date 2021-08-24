@@ -3,14 +3,27 @@
 @import "../../scss/colours.scss";
 @import "../../scss/flex.scss";
 
-.header {
+.Header {
     @include fixed-top;
     height: $header__height;
     @include nomargin;
-    @include flex(row, space-around, center);
-    @include background($dark, 0px);
+    @include flex(row, space-between, center);
+    @include headerBackground;
     width: 100vw;
     // z-index: 20;
+
+    &__left {
+        @include flex(row, space-around, center);
+        padding: 0% 5%;
+        // width: 70%;
+    }
+    &__right {
+        @include flex(row, space-around, center);
+        width: 50%;
+        @include xsmall {
+            width: 70%;
+        }
+    }
 }
 
 .nav_link {
