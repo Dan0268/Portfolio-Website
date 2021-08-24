@@ -186,11 +186,11 @@ $text: -1px;
     background-image: url("../../pictures/objects/ball2.png");
     width: 719px;
     height: 630px;
-    left: 0%;
+    left: -25%;
     top: 400%;
     position: absolute;
 
-    transform: translateZ(-1npm run0px) scale(factor(10px));
+    transform: translateZ(-10px) scale(factor(10px));
     @include xsmall {
         width: 719px * 0.7;
         height: 630px * 0.7;
