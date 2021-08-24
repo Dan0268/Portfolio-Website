@@ -72,7 +72,8 @@ $text: -1px;
         @include xxlarge {
         }
         @include xxxlarge {
-            transform: translateZ($back) scale(factor(-$back * 2.3));
+            height: 1620px * 2;
+            transform: translateZ($back) scale(factor(-$back * 1.05));
         }
     }
 
