@@ -72,6 +72,7 @@ $text: -1px;
         @include xxlarge {
         }
         @include xxxlarge {
+            transform: translateZ($back) scale(factor(-$back * 2.3));
         }
     }
 
@@ -158,6 +159,9 @@ $text: -1px;
         width: 310px * 0.7;
         height: 766px * 0.7;
         left: 58%;
+    }
+    @include xxxlarge {
+        left: 67%;
     }
 }
 .ball1 {
