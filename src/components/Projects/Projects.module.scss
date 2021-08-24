@@ -52,7 +52,7 @@
         margin: 20px 40px;
 
         @include xsmall {
-            width: 330px;
+            width: 250px;
             height: auto;
         }
         @include small {
@@ -69,7 +69,7 @@
             // padding: 10px;
             max-width: 390px;
             @include xsmall {
-                max-width: 330px;
+                max-width: 250px;
             }
             @include small {
                 max-width: 300px;

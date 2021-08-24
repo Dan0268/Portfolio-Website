@@ -5,7 +5,7 @@
 
 .Footer {
     // @include fixed-bottom;
-    height: $header__height;
+    height: $header__height * 1.2;
     @include nomargin;
     @include flex(column, space-around, center);
     text-align: center;

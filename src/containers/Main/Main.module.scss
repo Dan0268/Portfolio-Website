@@ -45,21 +45,6 @@ $text: -1px;
         z-index: 2;
     }
     &__back {
-        @include xsmall {
-        }
-        @include small {
-        }
-        @include medium {
-        }
-        @include large {
-        }
-        @include xlarge {
-        }
-        @include xxlarge {
-        }
-        @include xxxlarge {
-        }
-
         background-image: url("../../pictures/backgrounds/RetroParallax.jpg");
         width: 100vw;
         height: 1620px;
@@ -71,6 +56,23 @@ $text: -1px;
         position: absolute;
         z-index: -2;
         transform: translateZ($back) scale(factor(-$back));
+        padding-bottom: $header__height;
+        @include xsmall {
+            // transform: translateZ($back) scale(factor(-$back * 1.1));
+        }
+        @include small {
+            transform: translateZ($back) scale(factor(-$back * 1.2));
+        }
+        @include medium {
+        }
+        @include large {
+        }
+        @include xlarge {
+        }
+        @include xxlarge {
+        }
+        @include xxxlarge {
+        }
     }
 
     &__middle {
@@ -84,6 +86,12 @@ $text: -1px;
         background-size: cover;
         position: absolute;
         z-index: 3;
+        // @include xsmall {
+        //     z-index: 1;
+        // }
+        // @include small {
+        //     z-index: 1;
+        // }
     }
     &__elements {
         z-index: 20;
@@ -101,6 +109,18 @@ $text: -1px;
     background-image: url("../../pictures/objects/ball1.png");
     width: 500px;
     height: 500px;
+    @include xsmall {
+        width: 500px * 0.7;
+        height: 500px * 0.7;
+    }
+    @include small {
+        width: 500px * 0.7;
+        height: 500px * 0.7;
+    }
+    @include medium {
+        width: 500px * 0.7;
+        height: 500px * 0.7;
+    }
     position: absolute;
     left: -40%;
     top: 370%;
@@ -110,10 +130,32 @@ $text: -1px;
     background-image: url("../../pictures/objects/swirl1.png");
     width: 310px;
     height: 816px;
+
     position: absolute;
     left: 27%;
     top: 140%;
     transform: translateZ(5px) scale(factor(-6px));
+    @include xsmall {
+        width: 310px * 0;
+        height: 816px * 0;
+        left: 0%;
+    }
+    @include small {
+        width: 310px * 0.7;
+        height: 816px * 0.7;
+        left: 12%;
+    }
+    @include medium {
+        width: 310px * 0.7;
+        height: 816px * 0.7;
+        left: 20%;
+    }
+    @include large {
+        left: 20%;
+    }
+    // @include xlarge {
+    //     left: 17%;
+    // }
 }
 .swirl2 {
     background-image: url("../../pictures/objects/swirl2.png");
@@ -123,13 +165,44 @@ $text: -1px;
     left: 63%;
     top: 220%;
     transform: translateZ(5px) scale(factor(-6px));
+    @include xsmall {
+        width: 310px * 0.7;
+        height: 766px * 0.7;
+        left: 63%;
+    }
+    @include small {
+        width: 310px * 0.7;
+        height: 766px * 0.7;
+        left: 53%;
+    }
+    @include medium {
+        width: 310px * 0.7;
+        height: 766px * 0.7;
+        left: 58%;
+    }
 }
 .ball2 {
     background-image: url("../../pictures/objects/ball2.png");
     width: 719px;
     height: 630px;
+
     position: absolute;
     left: 70%;
     top: 10%;
     transform: translateZ(-10px) scale(factor(10px));
+    @include xsmall {
+        width: 719px * 0.7;
+        height: 630px * 0.7;
+        left: 70%;
+    }
+    @include small {
+        width: 719px * 0.7;
+        height: 630px * 0.7;
+        left: 70%;
+    }
+    @include medium {
+        width: 719px * 0.7;
+        height: 630px * 0.7;
+        left: 70%;
+    }
 }

@@ -72,7 +72,8 @@ const Main = () => {
                     //         ratio * mult
                     //     }px) scale(${factor(ratio * mult)})`,
                     // }}
-                />
+                ></div>
+
                 <div className={`${styles.Parallax__middle} ${styles.ball2}`} />
                 <div className={`${styles.Parallax__above} ${styles.swirl1}`} />
                 <div className={`${styles.Parallax__above} ${styles.swirl2}`} />
