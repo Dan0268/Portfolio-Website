@@ -29,6 +29,14 @@
         @include large {
             max-width: 70vw;
         }
+        @include xlarge {
+        }
+        @include xxlarge {
+            margin-left: 100px;
+        }
+        @include xxxlarge {
+            margin-left: 100px;
+        }
 
         min-height: 55vh;
 

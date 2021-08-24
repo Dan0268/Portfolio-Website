@@ -6,9 +6,9 @@ import Footer from "../Footer/Footer";
 const Contact = () => {
     return (
         <>
-            <section className={styles.Contact}>
+            <section className={styles.Contact} id="contact">
                 <div className={styles.Contact__container}>
-                    <div className={styles.Contact__title} id="contact">
+                    <div className={styles.Contact__title}>
                         <h1>Get In Touch</h1>
                         <br />
                         <a href="mailto:boskovic.danijel@gmail.com">
@@ -52,7 +52,7 @@ const Contact = () => {
                     </div>
                 </div>
             </section>
-            <Footer className={styles.Footer} />
+            {/* <Footer className={styles.Footer} /> */}
         </>
     );
 };

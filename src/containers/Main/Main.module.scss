@@ -105,27 +105,6 @@ $text: -1px;
     }
 }
 
-.ball1 {
-    background-image: url("../../pictures/objects/ball1.png");
-    width: 500px;
-    height: 500px;
-    @include xsmall {
-        width: 500px * 0.7;
-        height: 500px * 0.7;
-    }
-    @include small {
-        width: 500px * 0.7;
-        height: 500px * 0.7;
-    }
-    @include medium {
-        width: 500px * 0.7;
-        height: 500px * 0.7;
-    }
-    position: absolute;
-    left: -40%;
-    top: 370%;
-    transform: translateZ(-20px) scale(factor(20px));
-}
 .swirl1 {
     background-image: url("../../pictures/objects/swirl1.png");
     width: 310px;
@@ -153,9 +132,9 @@ $text: -1px;
     @include large {
         left: 20%;
     }
-    // @include xlarge {
-    //     left: 17%;
-    // }
+    @include xlarge {
+        left: 20%;
+    }
 }
 .swirl2 {
     background-image: url("../../pictures/objects/swirl2.png");
@@ -181,28 +160,50 @@ $text: -1px;
         left: 58%;
     }
 }
+.ball1 {
+    background-image: url("../../pictures/objects/ball1.png");
+    width: 800px * 0.85;
+    height: 800px * 0.85;
+    @include xsmall {
+        width: 800px * 0.7;
+        height: 800px * 0.7;
+    }
+    @include small {
+        width: 800px * 0.7;
+        height: 800px * 0.7;
+    }
+    @include medium {
+        width: 800px * 0.7;
+        height: 800px * 0.7;
+    }
+    position: absolute;
+    left: 120%;
+    top: 10%;
+
+    transform: translateZ(-20px) scale(factor(20px));
+}
 .ball2 {
     background-image: url("../../pictures/objects/ball2.png");
     width: 719px;
     height: 630px;
-
+    left: 0%;
+    top: 400%;
     position: absolute;
-    left: 70%;
-    top: 10%;
-    transform: translateZ(-10px) scale(factor(10px));
+
+    transform: translateZ(-1npm run0px) scale(factor(10px));
     @include xsmall {
         width: 719px * 0.7;
         height: 630px * 0.7;
-        left: 70%;
+        top: 700%;
     }
     @include small {
         width: 719px * 0.7;
         height: 630px * 0.7;
-        left: 70%;
+        top: 500%;
     }
     @include medium {
         width: 719px * 0.7;
         height: 630px * 0.7;
-        left: 70%;
+        top: 500%;
     }
 }

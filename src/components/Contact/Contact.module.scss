@@ -6,7 +6,7 @@
 .Contact {
     // padding-top: $header__height;
     @include flex(column, center, center);
-    min-height: 90vh;
+    min-height: 30vh;
     @include font($light);
     // padding-bottom: $header__height;
 
@@ -18,7 +18,7 @@
         width: auto;
         height: 300px;
         padding: 20px;
-        margin-bottom: 15%;
+        margin: 15%;
 
         // @include xsmall {
         //     width: 330px;

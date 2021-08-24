@@ -60,41 +60,50 @@ const Main = () => {
     // console.log(media);
 
     return (
-        <Router>
-            <div className={styles.Parallax__top}>
-                <Header />
-            </div>
-            <section className={styles.Main}>
-                <div
-                    className={styles.Parallax__back}
-                    // style={{
-                    //     transform: `translateZ(-${
-                    //         ratio * mult
-                    //     }px) scale(${factor(ratio * mult)})`,
-                    // }}
-                ></div>
-
-                <div className={`${styles.Parallax__middle} ${styles.ball2}`} />
-                <div className={`${styles.Parallax__above} ${styles.swirl1}`} />
-                <div className={`${styles.Parallax__above} ${styles.swirl2}`} />
-                <div className={`${styles.Parallax__middle} ${styles.ball1}`} />
-                <div className={styles.Parallax__group}>
-                    <div className={styles.Parallax__elements} id={"1"}>
-                        <Home />
-                    </div>
-                    <div className={styles.Parallax__elements} id={"2"}>
-                        <Skills />
-                    </div>
-                    <div className={styles.Parallax__elements} id={"3"}>
-                        <Projects />
-                    </div>
-                    <div className={styles.Parallax__elements} id={"4"}>
-                        <Contact />
-                    </div>
+        <>
+            <Router>
+                <div className={styles.Parallax__top}>
+                    <Header />
                 </div>
-            </section>
-        </Router>
-        //
+                <section className={styles.Main}>
+                    <div
+                        className={styles.Parallax__back}
+                        // style={{
+                        //     transform: `translateZ(-${
+                        //         ratio * mult
+                        //     }px) scale(${factor(ratio * mult)})`,
+                        // }}
+                    ></div>
+
+                    <div
+                        className={`${styles.Parallax__middle} ${styles.ball2}`}
+                    />
+                    <div
+                        className={`${styles.Parallax__above} ${styles.swirl1}`}
+                    />
+                    <div
+                        className={`${styles.Parallax__above} ${styles.swirl2}`}
+                    />
+                    <div
+                        className={`${styles.Parallax__middle} ${styles.ball1}`}
+                    />
+                    <div className={styles.Parallax__group}>
+                        <div className={styles.Parallax__elements} id={"1"}>
+                            <Home />
+                        </div>
+                        <div className={styles.Parallax__elements} id={"2"}>
+                            <Skills />
+                        </div>
+                        <div className={styles.Parallax__elements} id={"3"}>
+                            <Projects />
+                        </div>
+                        <div className={styles.Parallax__elements} id={"4"}>
+                            <Contact />
+                        </div>
+                    </div>
+                </section>
+            </Router>
+        </>
     );
 };
 
