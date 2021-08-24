@@ -29,10 +29,10 @@
 .nav_link {
     text-decoration: none;
     @include font($light);
-
+    transition-duration: 0.4s;
     &:hover {
         color: #2dc2bd;
         // backdrop-filter: none;
-        transition-duration: 0.5s;
+        transition-duration: 0.4s;
     }
 }

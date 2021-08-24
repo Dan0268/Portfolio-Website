@@ -6,8 +6,8 @@ import Footer from "../Footer/Footer";
 const Contact = () => {
     return (
         <>
-            <section className={styles.Contact} id="contact">
-                <div className={styles.Contact__container}>
+            <section className={styles.Contact}>
+                <div className={styles.Contact__container} id="contact">
                     <div className={styles.Contact__title}>
                         <h1>Get In Touch</h1>
                         <br />
@@ -52,7 +52,7 @@ const Contact = () => {
                     </div>
                 </div>
             </section>
-            {/* <Footer className={styles.Footer} /> */}
+            <Footer className={styles.Footer} />
         </>
     );
 };

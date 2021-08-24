@@ -6,7 +6,7 @@
 .Contact {
     // padding-top: $header__height;
     @include flex(column, center, center);
-    min-height: 30vh;
+    min-height: 90vh;
     @include font($light);
     // padding-bottom: $header__height;
 
@@ -54,7 +54,7 @@
             text-decoration: none;
             &:hover {
                 color: #2dc2bd;
-                transition: 0.5s;
+                transition: 0.3s;
             }
         }
     }
@@ -87,18 +87,18 @@
                 img {
                     width: 70px;
                     height: 70px;
-                    transition: 0.7s;
+                    transition: 0.3s;
                 }
                 color: #2dc2bd;
                 // font-size: 130%;
-                transition: 0.7s;
+                transition: 0.3s;
             }
         }
 
         &__icon {
             width: 60px;
             height: 60px;
-            transition: 0.7s;
+            transition: 0.3s;
             @include boxBackground;
             @include flex(column, space-around, center);
             margin-bottom: 5px;
@@ -106,7 +106,7 @@
             img {
                 width: 50px;
                 height: 50px;
-                transition: 0.7s;
+                transition: 0.3s;
             }
         }
         // a {

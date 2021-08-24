@@ -47,36 +47,36 @@
         text-align: center;
 
         &__icon {
-            width: 60px;
-            height: 60px;
-            transition: 0.7s;
+            width: 65px;
+            height: 65px;
+            transition: 0.3s;
             @include boxBackground;
             @include flex(column, space-around, center);
             margin-bottom: 5px;
 
+            img {
+                border-radius: 5px;
+                width: 50px;
+                height: 50px;
+                transition: 0.3s;
+            }
             &:hover {
-                width: 80px;
-                height: 80px;
+                width: 85px;
+                height: 85px;
                 filter: brightness(130%);
 
                 img {
                     width: 70px;
                     height: 70px;
-                    transition: 0.7s;
+                    transition: 0.3s;
                 }
-                transition: 0.7s;
+                transition: 0.3s;
             }
 
             &:hover + p {
-                color: black;
-                font-size: 130%;
-                transition: 0.7s;
-            }
-
-            img {
-                width: 50px;
-                height: 50px;
-                transition: 0.7s;
+                // color: black;
+                font-size: 120%;
+                transition: 0.3s;
             }
         }
 
