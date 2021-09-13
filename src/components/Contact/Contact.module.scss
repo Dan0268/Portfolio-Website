@@ -16,7 +16,7 @@
         @include background;
         flex-wrap: wrap;
         width: auto;
-        height: 300px;
+        height: auto;
         padding: 20px;
         margin: 15%;
 
@@ -122,6 +122,10 @@
             // flex-wrap: wrap;
             // height: 50px;
         }
+    }
+    &__copyright {
+        // width: 100%;
+        padding-top: 1rem;
     }
 }
 .Footer {

@@ -11,7 +11,7 @@ const Home = () => {
 
                 <div className={styles.Home__container__description}>
                     <div>
-                        <h2>Hi, thanks for stopping by!</h2>
+                        <h2>Hello, thanks for stopping by!</h2>
                         <br />
                     </div>
                     <p>

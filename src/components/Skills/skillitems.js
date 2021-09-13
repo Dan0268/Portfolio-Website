@@ -15,6 +15,7 @@ import ILLUSTRATOR from "../../icons/adobe-illustrator-seeklogo.com.svg";
 import AFTEREFFECTS from "../../icons/adobe-after-effects-seeklogo.svg";
 import MYSQL from "../../icons/MySQL.svg";
 import JAVA from "../../icons/java-seeklogo.com.svg";
+import SERVICENOW from "../../icons/servicenow-seeklogo.svg";
 
 export const webDevSkills = [
     { image: HTML5, name: "HTML5" },
@@ -29,6 +30,7 @@ export const webDevSkills = [
     { image: REACT, name: "React" },
     { image: SPRING, name: "Spring" },
     { image: MYSQL, name: "MySQL" },
+    { image: SERVICENOW, name: "ServiceNow" },
 ];
 
 export const visualArtSkills = [

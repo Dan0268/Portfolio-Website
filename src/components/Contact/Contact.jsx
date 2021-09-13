@@ -1,6 +1,7 @@
 import styles from "./Contact.module.scss";
 import linkedin from "../../icons/linkedin-new-2020-seeklogo.com.svg";
 import artstation from "../../icons/artstation-seeklogo.svg";
+import github from "../../icons/github-seeklogo.com.svg";
 import Footer from "../Footer/Footer";
 
 const Contact = () => {
@@ -27,9 +28,25 @@ const Contact = () => {
                             <p>
                                 <a
                                     href="https://www.linkedin.com/in/danijel-boskovic-921332114/"
-                                    className={styles.Skills__box__text}
+                                    className={styles.Contact__box__text}
                                 >
                                     LinkedIn
+                                </a>
+                            </p>
+                        </div>
+                        <div className={styles.Contact__box}>
+                            <a
+                                href="https://github.com/Dan0268"
+                                className={styles.Contact__box__icon}
+                            >
+                                <img src={github} alt="Github" />
+                            </a>
+                            <p>
+                                <a
+                                    href="https://github.com/Dan0268"
+                                    className={styles.Contact__box__text}
+                                >
+                                    Github
                                 </a>
                             </p>
                         </div>
@@ -50,9 +67,12 @@ const Contact = () => {
                             </p>
                         </div>
                     </div>
+                    <div className={styles.Contact__copyright}>
+                        <p>© 2021 Danijel Boskovic</p>
+                    </div>
                 </div>
             </section>
-            <Footer className={styles.Footer} />
+            {/* <Footer className={styles.Footer} /> */}
         </>
     );
 };
