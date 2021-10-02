@@ -16,6 +16,7 @@ import AFTEREFFECTS from "../../icons/adobe-after-effects-seeklogo.svg";
 import MYSQL from "../../icons/MySQL.svg";
 import JAVA from "../../icons/java-seeklogo.com.svg";
 import SERVICENOW from "../../icons/servicenow-seeklogo.svg";
+import FIGMA from "../../icons/figma-seeklogo.com.svg";
 
 export const webDevSkills = [
     { image: HTML5, name: "HTML5" },
@@ -34,9 +35,10 @@ export const webDevSkills = [
 ];
 
 export const visualArtSkills = [
-    { image: BLENDER, name: "Blender Render" },
-    { image: OCTANE, name: "Octane Render" },
+    { image: FIGMA, name: "Figma" },
     { image: PHOTOSHOP, name: "Adobe Photoshop" },
     { image: ILLUSTRATOR, name: "Adobe Illustrator" },
     { image: AFTEREFFECTS, name: "Adobe After Effects" },
+    { image: BLENDER, name: "Blender Render" },
+    { image: OCTANE, name: "Octane Render" },
 ];

@@ -23,7 +23,7 @@ const Skills = () => {
                 </div>
                 <div>
                     <h2 className={styles.Skills__title}>
-                        Visual Art and Animation
+                        Visual Art / Design and Animation
                     </h2>
                 </div>
                 <div className={styles.Skills__icon_flex}>
