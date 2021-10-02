@@ -27,7 +27,11 @@ $card: rgba(140, 139, 139, 0.076);
     box-shadow: 0px 0px 15px $innershadow inset,
         0px 5px 5px rgba(0, 0, 0, 0.419);
 }
-@mixin boxBackground($tone: rgba(255, 255, 255, 0), $radius: 10px, $blur: 0px) {
+@mixin boxBackground(
+    $tone: rgba(255, 255, 255, 0.07),
+    $radius: 10px,
+    $blur: 0px
+) {
     background-color: $tone;
     box-shadow: 0px 0px 15px $box inset, 0px 5px 5px rgba(0, 0, 0, 0.419);
     border-radius: $radius;
